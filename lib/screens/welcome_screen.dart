@@ -5,6 +5,15 @@ class WelcomeScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Scaffold(
+      body: Column(
+        children: [
+          Container(
+            height: 469,
+            color: const Color.fromRGBO(255, 164, 81, 1),
+          ),
+        ],
+      ),
+    );
   }
 }
