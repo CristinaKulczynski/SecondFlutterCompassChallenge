@@ -7,7 +7,6 @@ class WelcomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Column(
-        mainAxisAlignment: MainAxisAlignment.start,
         children: [
           Container(
             height: 469, // Altura
@@ -31,6 +30,38 @@ class WelcomeScreen extends StatelessWidget {
                   child: Image.asset('assets/images/ellipse_welcome.png'),
                 ),
                 Container(height: 25.5 // Altura
+                    ),
+              ],
+            ),
+          ),
+          const SizedBox(
+            height: 41,
+          ),
+          SizedBox(
+            width: 350, // Largura
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children:const[
+                Text(
+                  'Get The Freshest Fruit Salad Combo',
+                  style: TextStyle(
+                    fontSize: 15,
+                    fontFamily: 'Poppins',
+                    fontWeight: FontWeight.bold,
+                    color: Color.fromRGBO(39, 33, 77, 1),
+                        ),
+                ),
+                SizedBox(
+                  height: 5,
+                ),
+                Text(
+                  'We deliver the best and freshest fruit salad \nin town. Order for a combo today!!!',
+                  style: TextStyle(
+                    fontSize: 15,
+                    height: 1.6,
+                    fontFamily: 'Poppins',
+                    color: Color.fromRGBO(93, 87, 126, 1),
+                  ),
                 ),
               ],
             ),
