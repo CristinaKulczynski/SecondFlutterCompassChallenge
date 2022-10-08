@@ -1,6 +1,7 @@
+import 'package:desafio_sprint_dois/screens/authentication.dart';
 import 'package:flutter/material.dart';
 
-class WelcomeScreen extends StatefulWidget {
+class WelcomeScreen extends StatefulWidget{
   const WelcomeScreen({Key? key}) : super(key: key);
 
   @override
@@ -72,7 +73,14 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
                   height: 70,
                 ),
                 ElevatedButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => const Authentication(),
+                      ),
+                    );
+                  },
                   style: ButtonStyle(
                     backgroundColor: MaterialStateProperty.all(
                       const Color.fromRGBO(255, 164, 81, 1),
