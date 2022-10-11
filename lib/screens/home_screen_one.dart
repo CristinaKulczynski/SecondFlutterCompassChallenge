@@ -1,3 +1,4 @@
+import 'package:desafio_sprint_dois/screens/add_to_basket.dart';
 import 'package:desafio_sprint_dois/widgets/bolinha_da_tag.dart';
 import 'package:flutter/material.dart';
 
@@ -235,7 +236,13 @@ class _HomeScreenOneState extends State<HomeScreenOne> {
                           height: 24,
                           width: 24,
                           child: ElevatedButton(
-                            onPressed: () {},
+                            onPressed: () {
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                  builder: (context) => const AddToBasket(),
+                                ),
+                              );},
                             style: ElevatedButton.styleFrom(
                               padding:
                                   const EdgeInsets.only(top: 4.0, bottom: 4.0),
@@ -328,13 +335,6 @@ class _HomeScreenOneState extends State<HomeScreenOne> {
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(16),
               color: const Color.fromRGBO(255, 252, 242, 1),
-              boxShadow: const [
-                BoxShadow(
-                  color: Color.fromRGBO(32, 32, 32, 0.05),
-                  offset: Offset(0, 30),
-                  blurRadius: 60,
-                ),
-              ],
             ),
             child: Column(
               children: [
@@ -394,7 +394,12 @@ class _HomeScreenOneState extends State<HomeScreenOne> {
                           height: 24,
                           width: 24,
                           child: ElevatedButton(
-                            onPressed: () {},
+                            onPressed: () {Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                builder: (context) => const AddToBasket(),
+                              ),
+                            );},
                             style: ElevatedButton.styleFrom(
                               padding:
                               const EdgeInsets.only(top: 4.0, bottom: 4.0),
@@ -419,7 +424,6 @@ class _HomeScreenOneState extends State<HomeScreenOne> {
                   ],
                 ),
               ],
-
             ),
           ),
         ],
