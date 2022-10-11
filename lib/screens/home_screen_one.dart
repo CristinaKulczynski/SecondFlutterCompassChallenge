@@ -86,15 +86,138 @@ class _HomeScreenOneState extends State<HomeScreenOne> {
               ],
             ),
           ),
+          SingleChildScrollView(
+            scrollDirection: Axis.horizontal,
+            child: Container(
+              width: MediaQuery.of(context).size.width,
+              height: 40,
+              color: const Color.fromRGBO(247, 247, 245, 1),
+              child: ListView(scrollDirection: Axis.horizontal, children: [
+                for (var tags in listaTags) BolinhaDaTag(label: tags),
+              ]),
+            ),
+          ),
           const SizedBox(
-            width: 10,
+            height: 36,
+          ),
+          Row(
+            children: const [
+              SizedBox(
+                width: 20,
+              ),
+              Text(
+                'Recommended Combo',
+                style: TextStyle(
+                  fontSize: 18,
+                  fontFamily: 'Poppins',
+                  fontWeight: FontWeight.w500,
+                  color: Color.fromRGBO(39, 33, 77, 1),
+                ),
+              ),
+            ],
+          ),
+          Row(
+            children: [
+              const SizedBox(
+                width: 17,
+              ),
+              Padding(
+                padding: const EdgeInsets.all(3),
+                child: Image.asset('assets/images/line_home_screen_one.png'),
+              ),
+            ],
+          ),
+          const SizedBox(
+            height: 16,
           ),
           Container(
-            width: MediaQuery.of(context).size.width,
-            color: const Color.fromRGBO(247, 247, 245, 1),
-            child: ListView(
-              scrollDirection: Axis.horizontal,
-                children: [for (var tags in listaTags)  BolinhaDaTag(label: tags),]
+            height: 183,
+            width: 152,
+            decoration: BoxDecoration(
+              borderRadius: BorderRadius.circular(16),
+              color: const Color.fromRGBO(255, 255, 255, 1),
+              boxShadow: const [
+                BoxShadow(
+                  color: Color.fromRGBO(32, 32, 32, 0.05),
+                  offset: Offset(0, 30),
+                  blurRadius: 60,
+                ),
+              ],
+            ),
+          ),
+          const SizedBox(
+            height: 40,
+          ),
+          Row(
+            children: const [
+              SizedBox(
+                width: 20,
+              ),
+              Text(
+                'Hottest',
+                style: TextStyle(
+                  fontSize: 16,
+                  fontFamily: 'Poppins',
+                  fontWeight: FontWeight.w500,
+                  color: Color.fromRGBO(39, 33, 77, 1),
+                ),
+              ),
+              SizedBox(
+                width: 24,
+              ),
+              Text(
+                'Popular',
+                style: TextStyle(
+                  fontSize: 16,
+                  fontFamily: 'Poppins',
+                  fontWeight: FontWeight.w500,
+                  color: Color.fromRGBO(180, 180, 192, 1),
+                ),
+              ),
+              SizedBox(
+                width: 24,
+              ),
+              Text(
+                'New Combo',
+                style: TextStyle(
+                  fontSize: 16,
+                  fontFamily: 'Poppins',
+                  fontWeight: FontWeight.w500,
+                  color: Color.fromRGBO(180, 180, 192, 1),
+                ),
+              ),
+            ],
+          ),
+          const SizedBox(
+            width: 5,
+          ),
+          Row(
+            children: [
+              const SizedBox(
+                width: 17,
+              ),
+              Padding(
+                padding: const EdgeInsets.all(3),
+                child: Image.asset('assets/images/line2_home_screen_one.png'),
+              ),
+            ],
+          ),
+          const SizedBox(
+            height: 24,
+          ),
+          Container(
+            height: 150,
+            width: 140,
+            decoration: BoxDecoration(
+              borderRadius: BorderRadius.circular(16),
+              color: const Color.fromRGBO(255, 252, 242, 1),
+              boxShadow: const [
+                BoxShadow(
+                  color: Color.fromRGBO(32, 32, 32, 0.05),
+                  offset: Offset(0, 30),
+                  blurRadius: 60,
+                ),
+              ],
             ),
           ),
         ],
