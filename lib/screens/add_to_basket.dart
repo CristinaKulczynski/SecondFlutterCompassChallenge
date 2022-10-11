@@ -28,7 +28,9 @@ class _AddToBasketState extends State<AddToBasket> {
                   height: 32,
                   width: 75,
                   child: ElevatedButton(
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.pop(context);
+                    },
                     style: ElevatedButton.styleFrom(
                       padding:
                       const EdgeInsets.only(top: 2, bottom: 3, left: 2, right: 3),
@@ -220,7 +222,8 @@ class _AddToBasketState extends State<AddToBasket> {
                           height: 48,
                           width: 48,
                           child: ElevatedButton(
-                            onPressed: () {},
+                            onPressed: () {
+                            },
                             style: ElevatedButton.styleFrom(
                               padding: const EdgeInsets.only(top: 3, bottom: 3),
                               backgroundColor:
