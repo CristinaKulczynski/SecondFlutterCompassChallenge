@@ -26,16 +26,49 @@ class _HomeScreenOneState extends State<HomeScreenOne> {
           Padding(
             padding: const EdgeInsets.all(20.0),
             child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                Image.asset('assets/images/group_home_screen_one.png'),
-                Text(
-                  '       Welcome, $nome',
-                  style: const TextStyle(
-                    fontSize: 14,
-                    fontFamily: 'Poppins',
-                    fontWeight: FontWeight.w500,
-                    color: Color.fromRGBO(39, 33, 77, 1),
-                  ),
+                Row(
+                  children: [
+                    Image.asset('assets/images/group_home_screen_one.png'),
+                    const SizedBox(
+                      width: 22,
+                    ),
+                    Text(
+                      'Welcome, $nome',
+                      style: const TextStyle(
+                        fontSize: 14,
+                        fontFamily: 'Poppins',
+                        fontWeight: FontWeight.w500,
+                        color: Color.fromRGBO(39, 33, 77, 1),
+                      ),
+                    ),
+                  ],
+                ),
+                Row(
+                  children: [
+                    SizedBox(
+                      height: 48,
+                      width: 48,
+                      child: ElevatedButton(
+                        onPressed: () {},
+                        style: ElevatedButton.styleFrom(
+                          backgroundColor:
+                              const Color.fromRGBO(255, 255, 255, 1),
+                          shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(50),
+                          ),
+                        ),
+                        child: const ImageIcon(
+                            color: Color.fromRGBO(255, 164, 81, 1),
+                            AssetImage(
+                                'assets/images/cesto_home_screen_one.png')),
+                      ),
+                    ),
+                    const SizedBox(
+                      width: 12,
+                    ),
+                  ],
                 ),
               ],
             ),
