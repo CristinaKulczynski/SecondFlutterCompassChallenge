@@ -60,48 +60,52 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
                 const SizedBox(
                   height: 5,
                 ),
-                const Text(
-                  'We deliver the best and freshest fruit salad \nin town. Order for a combo today!!!',
-                  style: TextStyle(
-                    fontSize: 14,
-                    height: 1.6,
-                    fontFamily: 'Poppins',
-                    color: Color.fromRGBO(93, 87, 126, 1),
-                  ),
-                ),
-                const SizedBox(
-                  height: 70,
-                ),
-                ElevatedButton(
-                  onPressed: () {
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                        builder: (context) => const Authentication(),
-                      ),
-                    );
-                  },
-                  style: ButtonStyle(
-                    backgroundColor: MaterialStateProperty.all(
-                      const Color.fromRGBO(255, 164, 81, 1),
-                    ),
-                    fixedSize: MaterialStateProperty.all(
-                      const Size(327, 56),
-                    ),
-                    shape: MaterialStateProperty.all(
-                      RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(10),
+                Row(
+                  children: [
+                    const Text(
+                      'We deliver the best and freshest fruit salad \nin town. Order for a combo today!!!',
+                      style: TextStyle(
+                        fontSize: 14,
+                        height: 1.6,
+                        fontFamily: 'Poppins',
+                        color: Color.fromRGBO(93, 87, 126, 1),
                       ),
                     ),
-                  ),
-                  child: const Text(
-                    'Let’s Continue',
-                    style: TextStyle(
-                      fontSize: 15,
-                      fontFamily: 'Poppins',
-                      color: Colors.white,
+                    const SizedBox(
+                      height: 70,
                     ),
-                  ),
+                    ElevatedButton(
+                      onPressed: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => const Authentication(),
+                          ),
+                        );
+                      },
+                      style: ButtonStyle(
+                        backgroundColor: MaterialStateProperty.all(
+                          const Color.fromRGBO(255, 164, 81, 1),
+                        ),
+                        fixedSize: MaterialStateProperty.all(
+                          const Size(327, 56),
+                        ),
+                        shape: MaterialStateProperty.all(
+                          RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(10),
+                          ),
+                        ),
+                      ),
+                      child: const Text(
+                        'Let’s Continue',
+                        style: TextStyle(
+                          fontSize: 15,
+                          fontFamily: 'Poppins',
+                          color: Colors.white,
+                        ),
+                      ),
+                    ),
+                  ],
                 ),
               ],
             ),
