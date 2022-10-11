@@ -183,20 +183,24 @@ class _HomeScreenOneState extends State<HomeScreenOne> {
                   width: MediaQuery.of(context).size.width,
                   height: 14,
                 ),
-                Stack(children: [
-                  const Align(
-                  alignment: Alignment(0.7, -0.9),
-                  child: Icon(
-                    Icons.favorite_border_outlined, size: 21,
-                    color: Color.fromRGBO(240, 134, 38, 1),
-                  ),
+                Stack(
+                  children: [
+                    const Align(
+                      alignment: Alignment(0.7, -0.9),
+                      child: Icon(
+                        Icons.favorite_border_outlined,
+                        size: 21,
+                        color: Color.fromRGBO(240, 134, 38, 1),
+                      ),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.only(
+                          top: 16.0, bottom: 4.0, left: 36),
+                      child: Image.asset(
+                          'assets/images/fruit_home_screen_one.png'),
+                    ),
+                  ],
                 ),
-                   Padding(
-                     padding: const EdgeInsets.only(top: 16.0, bottom: 4.0, left: 36),
-                     child: Image.asset('assets/images/fruit_home_screen_one.png'),
-                   ),
-                   ]
-                  ),
                 const Padding(
                   padding: EdgeInsets.all(8.0),
                   child: Text('Honey lime combo'),
@@ -209,13 +213,20 @@ class _HomeScreenOneState extends State<HomeScreenOne> {
                         SizedBox(
                           width: 16,
                         ),
-                        Icon(Icons.attach_money, color: Color.fromRGBO(240, 134, 38, 1), size: 20,),
-                        Text('10,0', style: TextStyle(
-                          fontSize: 14,
-                          fontFamily: 'Poppins',
-                          fontWeight: FontWeight.bold,
+                        Icon(
+                          Icons.attach_money,
                           color: Color.fromRGBO(240, 134, 38, 1),
-                        ),),
+                          size: 20,
+                        ),
+                        Text(
+                          '10,0',
+                          style: TextStyle(
+                            fontSize: 14,
+                            fontFamily: 'Poppins',
+                            fontWeight: FontWeight.bold,
+                            color: Color.fromRGBO(240, 134, 38, 1),
+                          ),
+                        ),
                       ],
                     ),
                     Row(
@@ -226,14 +237,19 @@ class _HomeScreenOneState extends State<HomeScreenOne> {
                           child: ElevatedButton(
                             onPressed: () {},
                             style: ElevatedButton.styleFrom(
-                              padding: const EdgeInsets.only(top: 4.0, bottom: 4.0),
+                              padding:
+                                  const EdgeInsets.only(top: 4.0, bottom: 4.0),
                               backgroundColor:
                                   const Color.fromRGBO(255, 255, 255, 1),
                               shape: RoundedRectangleBorder(
                                 borderRadius: BorderRadius.circular(50),
                               ),
                             ),
-                            child: const Icon(Icons.add, color: Color.fromRGBO(255, 164, 81, 1), size: 14,),
+                            child: const Icon(
+                              Icons.add,
+                              color: Color.fromRGBO(255, 164, 81, 1),
+                              size: 14,
+                            ),
                           ),
                         ),
                         const SizedBox(
@@ -319,6 +335,91 @@ class _HomeScreenOneState extends State<HomeScreenOne> {
                   blurRadius: 60,
                 ),
               ],
+            ),
+            child: Column(
+              children: [
+                SizedBox(
+                  width: MediaQuery.of(context).size.width,
+                  height: 12,
+                ),
+                Stack(
+                  children: [
+                    const Align(
+                      alignment: Alignment(0.7, -0.9),
+                      child: Icon(
+                        Icons.favorite_border_outlined,
+                        size: 21,
+                        color: Color.fromRGBO(240, 134, 38, 1),
+                      ),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.only(
+                          top: 16.0, bottom: 4.0, left: 36),
+                      child: Image.asset(
+                          'assets/images/fruit3_home_screen_one.png'),
+                    ),
+                  ],
+                ),
+                const Padding(
+                  padding: EdgeInsets.all(4.0),
+                  child: Text('Quinoa fruit salad'),
+                ),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Row(
+                      children: const [
+                        SizedBox(
+                          width: 15,
+                        ),
+                        Icon(
+                          Icons.attach_money,
+                          color: Color.fromRGBO(240, 134, 38, 1),
+                          size: 20,
+                        ),
+                        Text(
+                          '10,0',
+                          style: TextStyle(
+                            fontSize: 14,
+                            fontFamily: 'Poppins',
+                            fontWeight: FontWeight.bold,
+                            color: Color.fromRGBO(240, 134, 38, 1),
+                          ),
+                        ),
+                      ],
+                    ),
+                    Row(
+                      children: [
+                        SizedBox(
+                          height: 24,
+                          width: 24,
+                          child: ElevatedButton(
+                            onPressed: () {},
+                            style: ElevatedButton.styleFrom(
+                              padding:
+                              const EdgeInsets.only(top: 4.0, bottom: 4.0),
+                              backgroundColor:
+                              const Color.fromRGBO(255, 255, 255, 1),
+                              shape: RoundedRectangleBorder(
+                                borderRadius: BorderRadius.circular(50),
+                              ),
+                            ),
+                            child: const Icon(
+                              Icons.add,
+                              color: Color.fromRGBO(255, 164, 81, 1),
+                              size: 14,
+                            ),
+                          ),
+                        ),
+                        const SizedBox(
+                          width: 16,
+                        ),
+                      ],
+                    ),
+                  ],
+                ),
+              ],
+
             ),
           ),
         ],
